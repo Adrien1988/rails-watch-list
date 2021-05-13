@@ -13,6 +13,15 @@
   </head>
 
   <body>
+
+  <div class="bd-example">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <%= link_to "My Lists", lists_path %>
+          <%= link_to "New list", new_list_path %>
+      </div>
+    </nav>
+  </div>
     <%= yield %>
   </body>
 </html>
