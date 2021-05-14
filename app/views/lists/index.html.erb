@@ -4,8 +4,12 @@
   </div>
 </div>
 
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <ul>
+    <% @lists.each do |list| %>
+      <div class="card-list" style="background-image:url('<%= cl_image_path list.photo.key, height: 300, width: 400, crop: :fill %>')">
+        <li><%= link_to list.name, list_path(list) %></li>
+      </div>
+    <% end %>
+  </ul>
+</div>

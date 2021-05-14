@@ -1,1 +1,20 @@
 // Specific CSS for your home-page
+h1, .h1 {
+  color: white;
+}
+
+.card-list {
+    height: 160px;
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin: 20px;
+    list-style: none;
+}
